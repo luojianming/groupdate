@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Groupdate</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+
+  <div class="navbar-inner">
+
+    <div class="container"> 
+
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+
+        <span class="icon-bar"></span>
+
+        <span class="icon-bar"></span>
+
+        <span class="icon-bar"></span>
+
+      </a>       
+
+      <a class="brand" href="../">校园爱情</a>
+
+      <div class="spannav-collapse">
+
+        <ul class="nav">
+
+          <li class="spannavactive">
+
+          <a href="homepage.html">首页</a>
+
+          </li>
+
+          <li>
+
+          <a href="personalpage.html">个人主页</a>
+
+          </li>
+          <li>
+
+          <a href="../target/ta.html">那个TA</a>
+
+          </li>
+
+          <li>
+
+          <a href="../group/groupmainpage.html">Groups</a>
+
+          </li>
+
+        </ul>
+
+
+
+
+
+        <ul class="nav pull-right">
+
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggleoggle="dropdown"><i class="icon-list"></i></a>
+
+          <ul class="dropdown-menu">
+
+            <li><a href="#">留言</a></li>
+
+            <li><a href="#">私信</a></li>
+
+            <li><a href="#">提醒</a></li>
+
+          </ul>
+
+          </li>
+
+          <li class="divider-vertical"></li>
+
+
+
+        </ul>
+
+      </div><!-- nav-collapse -->
+
+    </div>
+
+  </div><!-- navbar-inner -->
+
+</div><!--navbar navbar-fixed-top-->
+<%= yield %>
+
+</body>
+</html>
